@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car PPF Booking | MODIFY CLUB</title>
+  <link rel="stylesheet" href="./vehicle.css"><script src="./vehicle.js" defer></script>
+</head>
+<body data-vehicle="car">
+<header class="form-header"><a class="brand" href="./index.html"><span class="brand-mark">M</span><span>MODIFY <b>CLUB</b></span></a><a class="back-link" href="./index.html">← Back to Home</a></header>
+<main class="booking-wrap">
+  <div class="booking-intro"><p class="eyebrow">MODIFY CLUB / CAR CARE</p><h1>CAR <span>PPF</span></h1><p>Choose your car and preferred protection package. Your selections will be sent to our team on WhatsApp.</p></div>
+  <form id="vehicleForm" class="booking-form">
+    <div class="form-section-title"><span>01</span><div><h2>Vehicle Details</h2><p>Tell us about your car</p></div></div>
+    <div class="form-grid">
+      <label>Car brand <select id="brand" name="Brand" required><option value="">Select car brand</option></select></label>
+      <label>Car model <select id="model" name="Model" required disabled><option value="">Select brand first</option></select></label>
+      <label>Model year <select id="year" name="Year" required><option value="">Select year</option></select></label>
+      <label>Your name <input name="Customer name" placeholder="Enter your name" required></label>
+      <label>Phone number <input name="Customer phone" type="tel" placeholder="03xx xxxxxxx" required></label>
+    </div>
+    <div class="form-section-title"><span>02</span><div><h2>PPF Preferences</h2><p>Choose the finish and package</p></div></div>
+    <div class="form-grid">
+      <label>PPF package <select name="PPF package" required><option value="">Choose package</option><option>Front Protection</option><option>Full Body PPF</option><option>Partial PPF</option><option>Headlights & Mirrors</option><option>Custom PPF</option></select></label>
+      <label>Finish <select name="Finish" required><option value="">Choose finish</option><option>Gloss</option><option>Matte</option><option>Satin</option><option>Need advice</option></select></label>
+      <label>Preferred appointment date <input type="date" id="appointmentDate" name="Preferred date"></label>
+      <label class="full-width">Additional details <textarea name="Additional details" rows="3" placeholder="Any questions or special requests?"></textarea></label>
+    </div>
+    <button class="btn btn-gold submit-btn" type="submit">Send Booking on WhatsApp ↗</button>
+    <p class="form-note">This sends your selected details to WhatsApp. Your appointment is not confirmed until our team replies.</p>
+  </form>
+</main>
+<footer class="form-footer">© <span id="footerYear"></span> MODIFY CLUB · <a href="https://wa.me/923284369185" target="_blank" rel="noopener">0328 4369185</a></footer>
+</body></html>
